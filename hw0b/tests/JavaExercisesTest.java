@@ -18,6 +18,15 @@ public class JavaExercisesTest {
             assertThat(dice[i]).isEqualTo(i + 1);
         }
     }
+    @Test
+    public void makeDiceTest(){
+        int [] dice = JavaExercises.makeDice();
+        assertThat(dice).isNotNull();
+        assertThat(dice.length).isEqualTo(6);
+        for (int i = 0; i < 6; i++) {
+            assertThat(dice[i]).isEqualTo(i + 1);
+        }
+    }
 
     @Test
     @Order(1)
